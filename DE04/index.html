@@ -7,23 +7,29 @@
                 width: 100%;
                 font-family: Nunito;   
             }
+            .row{
+                display: flex;
+                flex-flow: row row wrap;
+                align-self: normal;
+            }
             .cr{
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
                 justify-content: center;
+                padding-bottom: 16px;
             }
             .container {
                 position: relative;
                 display: inline-block;
             }
             .polariodcard{
-                width: 101px;
+                width: 125px;
                 height: 161px;
-                padding-left: 18px;
+                padding-left: 20px;
             }
             .polariodcard > h1{
-                width: 120px;
+                width: 125px;
                 flex-shrink: 0;
                 color: #203B5F;
                 text-align: center;
@@ -64,31 +70,52 @@
         </style>
     </head>
     <body class="cr">
-        <div class="polariodcard">
-            <div class="polariod">
-                <div class="container">
-                    <img class="image" src="assets/death_cap_img.png" alt="Death cap mushroom growing in a patch of leaves">
-                    <img class="warning" src="assets/Vector.png" alt="Poisonious">
+        <div class="row">
+            <div class="polariodcard">
+                <div class="polariod">
+                    <div class="container">
+                        <img class="image" src="assets/death_cap_img.png" alt="Death cap mushroom growing in a patch of leaves">
+                        <img class="warning" src="assets/Vector.png" alt="Poisonious">
+                    </div>
                 </div>
+                <h1>Death Cap</h1>
             </div>
-            <h1>Death Cap</h1>
+            <div class="polariodcard">
+                <div class="polariod">
+                    <div class="container">
+                        <img class="image" src="assets/paddy_straw.png" alt="Two Paddy Straw mushrooms laying in the dirt">
+                    </div>
+                </div>
+                <h1>Paddy Straw</h1>
+            </div>
+            <div class="polariodcard">
+                <div class="polariod">
+                    <div class="container">
+                        <img class="image" src="assets/destroying_angel.png" alt="Death cap mushroom growing in a patch of leaves">
+                        <img class="warning" src="assets/Vector.png" alt="Poisonious">
+                    </div>
+                </div>
+                <h1>Destroying Angel</h1>
+            </div>
         </div>
-        <div class="polariodcard">
-            <div class="polariod">
-                <div class="container">
-                    <img class="image" src="assets/paddy_straw.png" alt="Two Paddy Straw mushrooms laying in the dirt">
+        <div class="row">
+            <div class="polariodcard">
+                <div class="polariod">
+                    <div class="container">
+                        <img class="image" src="assets/death_cap_img.png" alt="Death cap mushroom growing in a patch of leaves">
+                        <img class="warning" src="assets/Vector.png" alt="Poisonious">
+                    </div>
                 </div>
+                <h1>Death Cap</h1>
             </div>
-            <h1>Paddy Straw</h1>
-        </div>
-        <div class="polariodcard">
-            <div class="polariod">
-                <div class="container">
-                    <img class="image" src="assets/destroying_angel.png" alt="Death cap mushroom growing in a patch of leaves">
-                    <img class="warning" src="assets/Vector.png" alt="Poisonious">
+            <div class="polariodcard">
+                <div class="polariod">
+                    <div class="container">
+                        <img class="image" src="assets/paddy_straw.png" alt="Two Paddy Straw mushrooms laying in the dirt">
+                    </div>
                 </div>
+                <h1>Paddy Straw</h1>
             </div>
-            <h1>Destroying Angel</h1>
         </div>
     </body>
 </html>
