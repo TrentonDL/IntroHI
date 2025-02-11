@@ -7,18 +7,23 @@
                 width: 100%;
                 font-family: Nunito;   
             }
-
             .cr{
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
                 justify-content: center;
             }
+            .container {
+                position: relative;
+                display: inline-block;
+            }
             .polariodcard{
-                width: 100.912px;
-                height: 160.959px;
+                width: 101px;
+                height: 161px;
+                padding-left: 18px;
             }
             .polariodcard > h1{
+                width: 120px;
                 flex-shrink: 0;
                 color: #203B5F;
                 text-align: center;
@@ -28,11 +33,20 @@
                 line-height: normal;
             }
             .polariod{
-                width: 100.912px;
-                height: 126.766px;
+                width: 101px;
+                height: 127px;
                 flex-shrink: 0;
                 background: #FFF;
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+            .warning{
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                z-index: 10;
+                width: 20.016px;
+                height: 20.016px;
+                flex-shrink: 0;
             }
             .image{
                 width: 94px;
@@ -52,11 +66,29 @@
     <body class="cr">
         <div class="polariodcard">
             <div class="polariod">
-                <div class="cr">
-                    <img class="image" scr="assets/death_cap_img.png">
+                <div class="container">
+                    <img class="image" src="assets/death_cap_img.png" alt="Death cap mushroom growing in a patch of leaves">
+                    <img class="warning" src="assets/Vector.png" alt="Poisonious">
                 </div>
             </div>
             <h1>Death Cap</h1>
+        </div>
+        <div class="polariodcard">
+            <div class="polariod">
+                <div class="container">
+                    <img class="image" src="assets/paddy_straw.png" alt="Two Paddy Straw mushrooms laying in the dirt">
+                </div>
+            </div>
+            <h1>Paddy Straw</h1>
+        </div>
+        <div class="polariodcard">
+            <div class="polariod">
+                <div class="container">
+                    <img class="image" src="assets/destroying_angel.png" alt="Death cap mushroom growing in a patch of leaves">
+                    <img class="warning" src="assets/Vector.png" alt="Poisonious">
+                </div>
+            </div>
+            <h1>Destroying Angel</h1>
         </div>
     </body>
 </html>
